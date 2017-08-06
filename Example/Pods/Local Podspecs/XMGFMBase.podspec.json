@@ -1,9 +1,9 @@
 {
   "name": "XMGFMBase",
   "version": "0.1.0",
-  "summary": "A short description of XMGFMBase.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/lfk0120@163.com/XMGFMBase",
+  "summary": "XMGFMBase.",
+  "description": "基础组件 XMGFMBase.",
+  "homepage": "https://github.com/FKLam/XMGFMBase",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,11 +12,25 @@
     "lfk0120@163.com": "lfkun@aoyuan.net"
   },
   "source": {
-    "git": "https://github.com/lfk0120@163.com/XMGFMBase.git",
+    "git": "https://github.com/FKLam/XMGFMBase.git",
     "tag": "0.1.0"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "XMGFMBase/Classes/**/*"
+  "subspecs": [
+    {
+      "name": "Category",
+      "source_files": "XMGFMBase/Classes/Category/*"
+    },
+    {
+      "name": "NetWork",
+      "source_files": "XMGFMBase/Classes/NetWork/*",
+      "dependencies": {
+        "AFNetworking": [
+
+        ]
+      }
+    }
+  ]
 }
